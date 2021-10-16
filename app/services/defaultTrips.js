@@ -1,4 +1,4 @@
-const trips = [
+export const defaultTrips = [
   {
     id: 1,
     title: "Mexico",

@@ -1,10 +1,14 @@
-import { StatusBar } from "expo-status-bar";
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet } from "react-native";
+import { TripsProvider } from "./app/contexts/TripsContext";
 import TripsScreen from "./app/screens/TripsScreen";
 
 export default function App() {
-  return <TripsScreen />;
+  return (
+    <TripsProvider>
+      <TripsScreen />
+    </TripsProvider>
+  );
 }
 
 const styles = StyleSheet.create({
